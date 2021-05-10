@@ -1,3 +1,14 @@
+html {
+    font-size: 10px;
+}
+
+div {
+    font-size: 10em;
+}
+
 h1 {
     color: #a200ff;
+    font-size: 3rem;
+    background-color: aquamarine;
+    width: 20%;
 }
