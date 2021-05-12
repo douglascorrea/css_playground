@@ -1,14 +1,43 @@
-html {
-    font-size: 10px;
-}
-
-div {
-    font-size: 10em;
-}
-
 h1 {
     color: #a200ff;
     font-size: 3rem;
     background-color: aquamarine;
-    width: 20%;
+    /* border: 9px dotted gray; */
+    border-width: 9px;
+    border-style: dotted;
+    border-color: gray;
+    width: 50%;
+}
+
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: right;
+    border: 3px solid blue;
+    width: 50%;
+}
+
+p {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+span { 
+    font-size: 40px;
+    font-family: "Comic Sans MS";
+    color: yellow;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+ul {
+    font-size: 50px;
+    list-style: nome;
+}
+
+ol {
+    font-size: 50px;
+    list-style: upper-roman;
+    margin-left: 40px;
 }
