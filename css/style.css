@@ -41,3 +41,11 @@ ol {
     list-style: upper-roman;
     margin-left: 40px;
 }
+
+.conteudo {
+    margin-left: 2rem;
+}
+
+#titulo-principal {
+    margin-left: 5rem;
+}
