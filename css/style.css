@@ -40,13 +40,126 @@ ol {
 
 /* Explicando Cascade e especificidade */
 
+/* 0 - 2 - 0  */
+.titulo.titulo-pagina {
+    color: purple;
+}
+
+/* 1 - 0 - 0 */
+#titulo-principal {
+    color: aquamarine
+
+}
+
+/* 0 - 1 - 0  */
 .titulo-pagina {
     font-size: 5rem;
     border: 5px solid red;
+    color: rgb(37, 37, 37);
+    margin-left: 4rem;
+}
+
+/* 0 - 1 - 0  */
+.titulo {
+    border-style: dashed;
+    color: #768076;
+    margin-left: 0rem;
+}
+
+/* 0 - 0 - 1  */
+h1 { 
+    color: blue;
+    /* 1 - 0 - 0 - 1  */
+    /* color: blue !important; */
+}
+
+/* 
+Regra de Especificidade:
+
+0 - 2 - 1 
+*/
+
+.titulo-generico {
+    font-size: 40px;
     color: red;
 }
 
-.titulo {
-    border-style: dashed;
+.container-exemplo > .titulo-generico {
+    font-size: 80px;
+    color: black;
+
+}
+
+.meu-link {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+.meu-link:hover {
+    text-decoration: underline;
+    background-color: gray;
+}
+
+.meu-link:link {
     color: green;
+}
+
+.meu-link:visited {
+    color: #c86d04
+}
+
+.meu-link:active {
+    font-size: 60px;
+    color: red;
+}
+
+.meu-link:focus {
+    font-size: 90px;
+    color: purple;
+
+}
+
+.meu-input {
+    background-color: grey;
+    font-size: 50px;
+    color: white;
+}
+
+.meu-input[type="number"] {
+    font-size: 90px;
+    background-color: red;
+}
+
+.meu-input:focus {
+    background-color: white;
+    color: black;
+}
+
+.nav-menu {
+    border: 2px solid blue;
+    list-style: none;
+}
+
+.menu-item {
+    border: 2px dashed purple;
+    background-color: grey;
+    margin-bottom: 20px;
+}
+
+.menu-item:last-child {
+    margin-bottom: 0px;
+}
+
+
+.menu-item:first-child {
+    color: red;
+}
+
+.menu-item:nth-child(3) {
+    background-color: green;
+}
+
+.menu-item:nth-child(n + 2) {
+    font-weight: bold;
 }
