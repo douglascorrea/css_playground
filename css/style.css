@@ -11,13 +11,6 @@ p {
     color: #ffffff;
 }
 
-span { 
-    font-size: 40px;
-    font-family: "Comic Sans MS";
-    color: yellow;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
 
 ul {
     font-size: 50px;
@@ -145,6 +138,9 @@ Regra de Especificidade:
     border: 2px dashed purple;
     background-color: grey;
     margin-bottom: 20px;
+    display: inline-block;
+    font-size: 30px;
+    min-width: 200px;
 }
 
 .menu-item:last-child {
@@ -163,3 +159,36 @@ Regra de Especificidade:
 .menu-item:nth-child(n + 2) {
     font-weight: bold;
 }
+
+.bloco-inicial {
+    font-size: 50px;
+    background-color: #c86d04;
+    margin-bottom: 20px;
+    display: block; /* por padrao div é block */
+    width: 600px;
+}
+
+.span-inicial { 
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+    text-decoration: underline;
+    text-transform: uppercase;
+    display: inline-block; /* por padrao span é inline */
+    /*display: inline; */ /* por padrao span é inline */
+    width: 200px; /* ignorado por elemento inline */
+    height: 50px; /* ignorado por elemento inline */
+    background-color: #768076;
+}
+
+.bloco-escondido {
+    display: none;
+}
+
+/*
+elementos que sao por default inline 
+<span>
+<a >
+<strong>
+<em>
+*/
