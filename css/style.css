@@ -8,6 +8,7 @@ html {
 
 body {
     margin: 0;
+    background-color: white;
 }
 
 /* h2 {
@@ -338,4 +339,65 @@ elementos que sao por default inline
     padding: 20px;
     bottom: 20px;
     right: 30px;
+}
+
+.wrapper-5 {
+    width: 50%;
+}
+
+.resizable-image {
+    max-width: 100%;
+    height: auto;
+}
+/* @media (min-width: 767px) {
+    body {
+        background-color: yellow;
+    }
+}
+@media (min-width: 1023px) {
+    body {
+        background-color: yellow;
+    }
+}
+@media (min-width: 1199px) {
+    body {
+        background-color: yellow;
+    }
+} */
+
+
+@media (max-width: 1200px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        background-color: green;
+    }
+    .servico {
+        width: 40%;        
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        background-color: blue;
+    }
+    .resizable-image {
+        display: none;
+    }
+    .servico {
+        width: 100%;        
+        background-color: aqua;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        background-color: yellow;
+    }
 }
